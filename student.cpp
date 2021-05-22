@@ -1,28 +1,40 @@
 #include <iostream>
 using namespace std;
 
-// student info
+// student info(decleration)
 class student{
 public:
-  string stuname(string x);
-  int age(int y);
-};
-// student class def
-string student::stuname(string x),
-int student::age(int y){
+  string stuname();
+  int stuid();
+  char stuchar();
 
-cout<<"first name: ";
-cin >> x;
-cout<<"middel name: ";
-cin >> x;
-cout<<"age: ";
-cin >> y;
+};
+
+// student class def
+string student::stuname()
+int student::stuid()
+char student::stuchar()
+{
+cout<<"Stu id: ";
+cin<<stuid<<endl;
+cout<<"stu full name: ";
+cin<<stuname<<endl;
+cout<<"Gender: ";
+cin<<stuchar<<endl;
+cout<<"class: ";
+cin<<stuchar<<endl;
+
+
+return 0;
+
 }
 
-// main area
+// main area(call)
 int main(){
   student stu;
   cout<<stu.stuname();
+  cout<<stu.stuid();
+  cout<<stu.stuchar();
   return 0;
 
 }
